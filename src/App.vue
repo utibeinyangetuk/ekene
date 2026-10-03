@@ -21,18 +21,14 @@
   @import url("https://fonts.cdnfonts.com/css/poppins");
 
   :root {
-    --prybackground: #7B1E3C;
-    --secbackground: #C5A253;
-    --text: #EDEEE7;
-    /*
-    --background4: #F2EBDB;
-    --background5: #ADB3C2; */
-    --prytext: #231F20;
-    --sectext: #FDF5E5;
-    --border: 1px solid #000000;
-    --box-shadow: -4px 8px 0 0 var(--secbackground);
-    --border-radius: 8px;
-    --padding: 30px;
+    --prybackground: #350105;
+    --secbackground: #cd8026;
+    --text: #ffffff;
+    --prytext: #cd8026;
+    --sectext: #eae2e298;
+    --border: 1px solid #eeeeee37;
+    --border-radius: 5px;
+    --padding: 50px;
   }
 
   #app {
@@ -40,9 +36,8 @@
     -webkit-font-smoothing: antialiased;
     overflow: auto;
     scroll-behavior: smooth;
-    height: 98vh;
+    height: 95vh;
     border-radius: var(--border-radius);
-    border:3px solid
   }
 
   body {
@@ -79,13 +74,14 @@
   .hero {
     position: relative;
   }
-  .main-wrapper {
-
-  }
 
   @media only screen and (max-width: 768px) {
     .hero-wrapper {
       padding: 10px;
+    }
+
+    body {
+      padding: 5px;
     }
   }
 

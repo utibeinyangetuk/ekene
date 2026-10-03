@@ -27,97 +27,150 @@
 </script>
 
 <template>
-  <header class="hero">
-    <!-- <img :src="logo" class="site-logo" alt="Logo" /> -->
+ <header class="hero">
     <Carousel :images="slides" :interval="5000" :pagination="true" />
   </header>
-  <div class="content">
-    <h1>Integrated Solutions. Lasting Impacts.</h1>
-    <p>
-      <span style="color:var(--secbackground); font-weight: 800; letter-spacing: 1px;">Diliforge Services Limited</span>
-      is a dynamic and diversified service company committed to delivering integrated
-      solutions across multiple sectors. We provide professional services in drilling, manpower supply, procurement,
-      logistics, construction support, branding, painting, HVAC, plumbing, importation,oil & gas support, and
-      agricultural services.
-      At Diliforge, we believe that successful projects are built on reliability, professionalism, quality, safety, and
-      strong partnerships. Our approach combines practical expertise, responsive service delivery, and a clear
-      understanding of our clients' needs to provide solutions that create measurable and lasting value.
-      From technical and field services to procurement, logistics and project support, we are positioned to serve
-      individuals, businesses, contractors, organizations, and communities with solutions tailored to their specific
-      requirements.
-      Our commitment is simple: deliver quality solutions, build lasting relationships, and create lasting impact.
-    </p>
+ <div class="content">
+   <div class="content-label">
+      About Diliforge
+    </div>
+
+    <div class="content-text">
+      <p>
+       <span>
+          Diliforge Services Limited
+        </span>
+        is a dynamic and diversified service company committed to delivering
+        integrated solutions across multiple sectors. We provide professional
+        services in drilling, manpower supply, procurement, logistics,
+        construction support, branding, painting, HVAC, plumbing, importation,
+        oil & gas support, and agricultural services.
+      </p>
+     <p>
+        At Diliforge, we believe that successful projects are built on
+        reliability, professionalism, quality, safety, and strong partnerships.
+        Our approach combines practical expertise, responsive service delivery,
+        and a deep understanding of our clients' needs to provide solutions that
+        create measurable and lasting value.
+      </p>
+
+      <p>
+        From technical and field services to procurement, logistics, and project
+        support, we are positioned to serve individuals, businesses,
+        contractors, organizations, and communities with solutions tailored to
+        their specific requirements.
+      </p>
+
+      <p>
+        Our commitment is simple: deliver quality solutions, build lasting
+        relationships, and create lasting impact.
+      </p>
+    </div>
   </div>
 </template>
 <style scoped>
-  .hero {
+ .hero {
     position: relative;
+   width: 100%;
   }
 
-  /* .site-logo {
-    position: absolute;
-    top: 25px;
-    left: 40px;
-    width: 100px;
-    z-index: 100;
-    height: 100px;
-  } */
-  .content {
+.content {
+   margin: 0 auto;
+    padding: 90px 45px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-        minmax(300px, 1fr));
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 4rem 0rem;
-    gap: 1rem;
-
+   grid-template-columns: 280px 1fr;
+    gap: 60px;
   }
 
-  .content h1 {
-   font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: var(--secbackground, #222);
+  .content-label {
+    color: #b8860b;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    font-size: .9rem;
+    font-weight: 700;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
   }
 
-  .content p {
-   font-size: 1.3ch;
-    line-height: 1.8;
-    color: var(--text, #666);
-    margin: 0;
-    text-align: left;
-
+  .content-text {
+    border-left: 1px solid #ececec;
+    padding-left: 40px;
   }
 
-  @media (max-width: 768px) {
+  .content-text p {
+    color: #555;
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 22px;
+  }
+
+.content-text p:last-child {
+    margin-bottom: 0;
+  }
+
+.content-text span {
+    color: var(--prytext);
+    font-weight: 700;
+    letter-spacing: .5px;
+  }
+
+@media (max-width: 1024px) {
     .content {
-      padding: 2rem 1rem;
+      grid-template-columns: 200px 1fr;
+      gap: 40px;
     }
 
-    .content h1 {
-      font-size: 1.8rem;
-      width: 100%;
-    }
-
-    .content p {
-      font-size: 0.9rem;
+  .content-text {
+      padding-left: 30px;
     }
   }
 
-  @media (max-width: 480px) {
+@media (max-width: 768px) {
     .content {
-      padding: 1rem;
+     grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 60px 25px;
     }
 
-    .content h1 {
-      font-size: 1.5rem;
+  .content-label {
+      position: static;
+      margin-bottom: 10px;
     }
 
-    .content p {
-      font-size: 0.8rem;
+  .content-text {
+      border-left: none;
+      border-top: 2px solid #ececec;
+      padding-left: 0;
+      padding-top: 25px;
+    }
+
+    .content-text p {
+      font-size: .95rem;
+      line-height: 1.9;
     }
   }
+
+@media (max-width: 480px) {
+    .content {
+     padding: 50px 20px;
+      gap: 15px;
+    }
+
+  .content-label {
+      font-size: .8rem;
+      letter-spacing: 2px;
+    }
+
+  .content-text {
+      padding-top: 20px;
+    }
+
+    .content-text p {
+      font-size: .9rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+  }
+
 </style>
