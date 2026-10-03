@@ -5,11 +5,17 @@
         <LandingPage />
       </div>
     </div>
+    <ServicesPage />
+    <FoundationPage />
+    <ContactPage />
   </div>
 
 </template>
 <script setup>
+  import ContactPage from './views/ContactPage.vue';
+  import FoundationPage from './views/FoundationPage.vue';
   import LandingPage from './views/LandingPage.vue';
+  import ServicesPage from './views/ServicesPage.vue';
 </script>
 <style>
   @import url("https://fonts.cdnfonts.com/css/poppins");
@@ -26,7 +32,7 @@
     --border: 1px solid #000000;
     --box-shadow: -4px 8px 0 0 var(--secbackground);
     --border-radius: 8px;
-    --padding: 15px;
+    --padding: 30px;
   }
 
   #app {
@@ -36,6 +42,7 @@
     scroll-behavior: smooth;
     height: 98vh;
     border-radius: var(--border-radius);
+    border:3px solid
   }
 
   body {
@@ -71,6 +78,9 @@
 
   .hero {
     position: relative;
+  }
+  .main-wrapper {
+
   }
 
   @media only screen and (max-width: 768px) {

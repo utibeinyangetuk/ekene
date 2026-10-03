@@ -69,22 +69,27 @@
     max-width: 1500px;
     margin: 0 auto;
     padding: 4rem 0rem;
+    gap: 1rem;
+
   }
 
   .content h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
+   font-size: 2rem;
+    font-weight: 400;
     line-height: 1.2;
     margin-bottom: 1rem;
     color: var(--secbackground, #222);
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .content p {
-    font-size: 1.25rem;
-    line-height: 2;
+   font-size: 1.3ch;
+    line-height: 1.8;
     color: var(--text, #666);
     margin: 0;
     text-align: left;
+
   }
 
   @media (max-width: 768px) {
