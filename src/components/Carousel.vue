@@ -70,8 +70,7 @@
 <style scoped>
   .carousel {
     width: 100%;
-    /* aspect-ratio: 16 / 9; */
-    height: 700px;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
   }
 
@@ -129,7 +128,7 @@
 
   @media (max-width: 600px) {
     .carousel {
-      aspect-ratio: 16 / 9;
+     aspect-ratio: 1/1;
       height: 100%;
     }
   }

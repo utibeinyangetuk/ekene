@@ -3,6 +3,9 @@
   import image10 from "../assets/images/image10.jpg";
   import image11 from "../assets/images/image11.jpg";
   import image12 from "../assets/images/image12.jpg";
+  import image13 from "../assets/images/image13.jpg";
+  import image14 from "../assets/images/image14.jpg";
+  import image15 from "../assets/images/image15.jpg";
   import image2 from "../assets/images/image2.jpg";
   import image3 from "../assets/images/image3.jpg";
   import image4 from "../assets/images/image4.jpg";
@@ -22,7 +25,7 @@
     image5,
     image6,
     image7,
-    image8, image9, image10, image11, image12
+    image8, image9, image10, image11, image12, image13, image14, image15
   ];
 </script>
 

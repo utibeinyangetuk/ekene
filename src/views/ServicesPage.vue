@@ -51,7 +51,7 @@
 
         <div class="service-card">
           <div class="service-icon">
-            <i class="uil uil-oil-rig"></i>
+           <i class="uil uil-ship"></i>
           </div>
           <h2>Drilling Services</h2>
           <p>
@@ -194,7 +194,7 @@
     color: rgba(122, 1, 22, .08);
   }
 
-  `` .service-card h2 {
+.service-card h2 {
     position: relative;
     z-index: 2;
     color: #222;

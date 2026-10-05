@@ -9,7 +9,6 @@
     <FoundationPage />
     <ContactPage />
   </div>
-
 </template>
 <script setup>
   import ContactPage from './views/ContactPage.vue';
@@ -38,6 +37,7 @@
     scroll-behavior: smooth;
     height: 95vh;
     border-radius: var(--border-radius);
+    /* border: 2px solid; */
   }
 
   body {
