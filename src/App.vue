@@ -37,7 +37,6 @@
     scroll-behavior: smooth;
     height: 95vh;
     border-radius: var(--border-radius);
-    /* border: 2px solid; */
   }
 
   body {
